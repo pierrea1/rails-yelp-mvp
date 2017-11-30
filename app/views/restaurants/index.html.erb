@@ -1,0 +1,54 @@
+  <div class="restaurants-container">
+    <div class="row">
+      <% @restaurants.each do |restaurant| %>
+        <div class="col-xs-6 col-sm-3" id="map">
+          <div class="card">
+            <div class="card-block">
+            <h4 class="card-title"><%= restaurant.name %></h4>
+            <p class="card-text"><%= restaurant.address %></p>
+            <p class="card-text"><%= restaurant.phone_number %></p>
+            <p class="card-text"><%= restaurant.category %></p>
+            <%= link_to 'Show', restaurant %></td>
+            <%= link_to 'Edit', edit_restaurant_path(restaurant) %>
+            <%= link_to 'Delete', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
+
+  <!-- <h1>Restaurants</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone number</th>
+        <th>Category</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+        <% @restaurants.each do |restaurant| %>
+          <tr>
+            <td><%= restaurant.name %></td>
+            <td><%= restaurant.address %></td>
+            <td><%= restaurant.phone_number %></td>
+            <td><%= restaurant.category %></td>
+            <td><%= link_to 'Show', restaurant %></td>
+            <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
+            <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+    </tbody>
+
+  </table>
+
+  <br> -->
+
+<%= link_to 'New Restaurant', new_restaurant_path %>

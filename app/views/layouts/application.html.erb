@@ -3,12 +3,30 @@
   <head>
     <title>RailsYelpMvp</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+    <nav class="navbar-wagon navbar-light bg-faded">
+      <h1 class="navbar-brand mb-0">Restolib</h1>
+    </nav>
+
     <%= yield %>
+
+  <div class="container">
+    <hr/>
+        <div class="text-center center-block">
+          <br />
+          <a href=""><i class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href=""><i class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href=""><i class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href=""><i class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+    <hr/>
+  </div>
   </body>
 </html>

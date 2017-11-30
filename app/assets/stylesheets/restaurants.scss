@@ -1,0 +1,28 @@
+// Place all the styles related to the Restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  display: flex,
+}
+
+.restaurants-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#map {
+  // background-color: yellow,
+  // flex: 0 0 450px;
+  // height: 100vh;
+  // position: sticky !important; /* !important to override Gmaps inline CSS */
+  // top: 0 !important;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
